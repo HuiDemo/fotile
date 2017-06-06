@@ -1,0 +1,297 @@
+@import 'public.css';
+
+@mixin border-radius($value){
+    border-radius: $value;
+    -webkit-border-radius: $value;
+    -moz-border-radius: $value;
+    -ms-border-radius: $value;
+    -o-border-radius: $value;
+}
+
+.top{
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding: 1%;
+    overflow: hidden;
+    height: 5%;
+    width: 98%;
+    background: -webkit-linear-gradient(rgba(204,204,204,0.8), rgba(0,0,0,0)); 
+    background: -o-linear-gradient(rgba(204,204,204,0.8), rgba(0,0,0,0)); 
+    background: -moz-linear-gradient(rgba(204,204,204,0.8), rgba(0,0,0,0)); 
+    background: -ms-linear-gradient(rgba(204,204,204,0.8), rgba(0,0,0,0)); 
+    background: linear-gradient(rgba(204,204,204,0.8), rgba(0,0,0,0)); 
+    .top-return,.top-right{
+        height: 100%;
+        width: auto;
+        text-align: center;
+        font-family: 'iconfont';
+        font-size: 18px;
+        font-size: 1.8rem;
+      
+    }
+    .top-return{
+        float: left;
+    }
+    .top-right{
+        float: right;
+    }
+    a,a:active{
+        color: #fff;
+    }
+}
+
+.main-ppt{
+    position: relative;
+    height: 70%;
+    width: auto;
+    .main-bay{
+        position: absolute;
+        bottom: -25px;
+        right: 5%;
+        height: 50px;
+        width: 100px;
+        background: #fb4a54;
+        text-align: center;
+        font-size: 18px;
+        font-size: 1.8rem;
+        line-height: 50px;
+        color: #fff;
+        @include border-radius(25px);
+        a,a:active{
+            font-family: 'iconfont';
+            color: #fff;
+        }
+    }
+}
+
+.main-con{
+    overflow: hidden;
+    height: auto;
+    width: 100%;
+    .main-con-title{
+        margin: 10% auto 3% auto;
+        height: auto;
+        width: 100%;
+        font-size: 24px;
+        font-size: 2.4rem;
+        text-align: center;
+    }
+    .main-con-title-graded{
+        height: auto;
+        width: 100%;
+        font-family: 'iconfont';
+        text-align: center;
+        font-size: 14px;
+        font-size: 1.4rem;
+        color: #cacaca;    
+    }
+    .main-con-ul{
+        margin: 5% auto;
+        height: auto;
+        width: 90%;
+        box-shadow: 0 1px 2px #ccc, 0 0 2px #ccc, 0 0 2px #ccc;
+        ul{
+            height: auto;
+            width: 100%;
+            li{
+                overflow: hidden;
+                height: 20%;
+                width: 94%;
+                list-style: none;
+                padding: 3%;  
+            }
+            .main-teacher{
+                position: relative;
+                border-bottom: 1px solid #f9f9f9;
+                .main-teacher-avatar{
+                    float: left;
+                    height: 50px;
+                    width: 50px;
+                    @include border-radius(25px);
+                    background: url(../img/bg.png);
+                }
+                .main-teacher-message{
+                    height: auto;
+                    width: 30%;
+                    float: left;
+                    margin-left: 10px;
+                    .main-teacher-name{
+                        font-size: 18px;
+                        font-size: 1.8rem;
+                    }
+                    .main-teacher-position{
+                        margin-top: 5px;
+                    }
+                }
+                .main-teacher-graded{
+                    float: right;
+                    text-align: center;
+                    p{
+                        line-height: 30px;
+                        font-family: 'iconfont';
+                    }
+                }
+            }
+            .main-shop{
+                clear: both;
+                border-bottom: 1px solid #f9f9f9;
+                .main-shop-site{
+                    height: auto;
+                    width: auto;
+                    float: left;
+                    .main-shop-name{
+                        font-size: 18px;
+                        font-size: 1.8rem;
+                    }
+                }
+                .main-shop-icon{
+                    float: right;
+                    text-align: right;
+                    font-family: 'iconfont';
+                    font-size: 24px;
+                    font-size: 2.4rem;
+                    color: #FB4A54;
+                }
+            }
+            .main-time{
+                background: #f3f3f3;
+                border-bottom: 1px dashed #d6d6d6;
+                .main-time-date{
+                    float: left;
+                    p b{
+                        font-size: 18px;
+                        font-size: 1.8rem;
+                    }
+                }
+                .main-time-hour{
+                    float: right;
+                    p b{
+                        font-size: 18px;
+                        font-size: 1.8rem;
+                    }
+                }
+            }
+            .main-number{
+                background: #f3f3f3;
+                border-bottom: 1px dashed #d6d6d6;
+                .main-number-remain{
+                    float: left;
+                    p b{
+                        font-size: 18px;
+                        font-size: 1.8rem;
+                    }
+                }
+                .main-number-all{
+                    float: right;
+                    p b{
+                        font-size: 18px;
+                        font-size: 1.8rem;
+                    }
+                }
+            }
+            .main-food{
+                background: #f3f3f3;
+                border-bottom: 1px dashed #d6d6d6;
+                .main-food-style{
+                    p b{
+                        font-size: 18px;
+                        font-size: 1.8rem;
+                    }
+                }
+            }
+            .main-address{
+                background: #f3f3f3;
+                border-bottom: 1px dashed #d6d6d6;
+                .main-address-all{
+                    float: left;
+                    p b{
+                        font-size: 18px;
+                        font-size: 1.8rem;
+                    }
+                }
+                .main-address-icon{
+                    float: right;
+                    text-align: right;
+                    font-family: 'iconfont';
+                    font-size: 26px;
+                    font-size: 2.6rem;
+                    color: #3cb8c6;
+                }
+            }
+            .main-phone{
+                background: #f3f3f3;
+                border-bottom: 1px dashed #d6d6d6;
+                .main-phone-number{
+                    float: left;
+                    p b{
+                        font-size: 18px;
+                        font-size: 1.8rem;
+                    }
+                }
+                .main-phone-icon{
+                    float: right;
+                    text-align: right;
+                    font-family: 'iconfont';
+                    font-size: 24px;
+                    font-size: 2.4rem;
+                    color: #8ac22c;
+                }
+            }
+            .main-price{
+                background: #FB4A54;
+                color: #fff;
+                .main-price-number{
+                    float: left;
+                    p b{
+                        font-size: 18px;
+                        font-size: 1.8rem;
+                    }
+                }
+                .main-price-icon{
+                    float: right;
+                    text-align: right;
+                    font-family: 'iconfont';
+                    font-size: 24px;
+                    font-size: 2.4rem;
+                }
+            }
+        }
+    }
+    .main-bottom{
+        margin: 0 auto;
+        width: 96%;
+        margin-bottom: 2%;
+        .main-btm-img{
+            overflow: hidden;
+            height: auto;
+            width: 100%;
+            @include border-radius(100px);
+        }
+    }
+}
+
+.btm{
+    height: 200px;
+    width: 100%;
+    background: url(../img/bg.png) no-repeat center center;
+    .btm-icon{
+        letter-spacing: 20px;
+        height: 80px;
+        width: 100%;
+        line-height: 80px;
+        text-align: center;
+        font-size: 30px;
+        font-size: 3rem;
+        font-family: "iconfont";
+        color: #fff;
+    }
+    .btm-logo{
+        margin: 0 auto;
+        height: 120px;
+        width: 240px;
+        background: url(../img/logo.png) no-repeat;
+        background-size: 240px auto;
+    }
+}
+

@@ -1,0 +1,109 @@
+@import "public.css";
+
+@mixin border-bottom($value: #c0a791){
+    border-bottom: 1px solid $value;
+}
+@mixin border-radius($value:20px){
+    border-radius: $value;
+    -webkit-border-radius: $value;
+    -moz-border-radius: $value;
+    -ms-border-radius: $value;
+    -o-border-radius: $value;
+}
+
+body{
+    height: 100%;
+    width: auto;
+    background: url(../img/bg.png) no-repeat;
+}
+
+.logo{
+    height: auto;
+    width: 60%;  
+    margin: 0 auto; 
+    opacity: 0.7;
+}
+
+.phone-num{
+    @include border-bottom(#c0a791);
+    margin: 20px auto;
+    height: 40px;
+    width: 90%;
+    background: rgba(0,0,0,0);
+    input[type='text']{
+        height: 40px;
+        width: 100%;
+        font-size: 10px;
+        font-size: 1rem;
+        text-indent: 10px;
+        line-height: 40px;
+        background: rgba(0,0,0,0);
+        color: #fff;
+    }
+}
+
+.login-password{
+    @include border-bottom(#c0a791);
+    margin: 20px auto;
+    height: 40px;
+    width: 90%;
+    background: rgba(0,0,0,0);
+    input[type='password']{
+        border: none;
+        outline: none;
+        height: 40px;
+        width: 100%;
+        font-size: 10px;
+        font-size: 1rem;
+        text-indent: 10px;
+        line-height: 40px;
+        background: rgba(0,0,0,0);
+        color: #fff;
+    }
+}
+
+.login-btn{
+    cursor: pointer;
+    margin: 30px auto;
+    height: 40px;
+    width: 90%;
+    border: 1px solid #C0A791;
+    @include border-radius(30px);
+    line-height: 40px;
+    text-align: center;
+    color: #FFFFFF;
+    opacity: 0.8;
+    font-size: 10px;
+    font-size: 1rem;
+}
+.login-btn:active{
+    box-shadow: 1px 1px 1px 1px #c0a791 inset;
+}    
+
+.login-help{
+    margin: 40px 5%;
+    height: auto;
+    width: auto;
+    color: #FFFFFF;
+    opacity: 0.5;
+    font-size: 12px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    a,a:visited{
+        color: #FFFFFF;
+    }
+}
+
+.reminder{
+    position: relative;
+    margin:10px auto;
+    height: auto;
+    width: 50%;
+    background: #E2BE8E;
+    font-size: 12px;
+    font-size: 1.2rem;
+    background: #000;
+    color: #fff;
+    text-align: center;
+    display: none;
+}
